@@ -1,27 +1,27 @@
-# myprojectdir
+## myprojectdir
 
 
-#start django_celery_project
+# start django_celery_project
 1) python manage.py runserver
 
 
-#start celery worker
+# start celery worker
 
 2) celery -A myproject.celery worker --pool=solo -l info
 
 
-#start celery beat
+# start celery beat
 
 3) celery -A myproject beat -l INFO
 
 
 
-#How To Set Up an ASGI Django App with Postgres, Nginx, and Uvicorn on Ubuntu 20.04
+## How To Set Up an ASGI Django App with Postgres, Nginx, and Uvicorn on Ubuntu 20.04
 
 link: https://www.digitalocean.com/community/tutorials/how-to-set-up-an-asgi-django-app-with-postgres-nginx-and-uvicorn-on-ubuntu-20-04?fbclid=IwAR2JyROmKQi8zOk75qglD12bbyKAxdECO1nrT8iT6_85z971LtLVHCHLLRs
 
 
-Introduction:
+## Introduction:
 
 Django is a powerful web framework that can help you get your Python application or website off the ground. Django includes a simplified development server for testing your code locally, but a more secure and powerful web server is required for anything production related.
 
