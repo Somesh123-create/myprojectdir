@@ -140,7 +140,8 @@ At this point, your project directory (~/myprojectdir in this tutorial) should h
 - ~/myprojectdir/manage.py: A Django project management script.
 - ~/myprojectdir/myproject/: The Django project package. This should contain the __init__.py, asgi.py, settings.py, urls.py, and wsgi.py files.
 - ~/myprojectdir/myprojectenv/: The virtual environment directory you created earlier.
-- 
+
+
 ## Adjusting the Project Settings
 After creating your project files, you’ll need to adjust some settings. Open the settings file in your text editor:
 
