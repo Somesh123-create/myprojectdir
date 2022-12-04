@@ -521,12 +521,12 @@ Finally, create a location / {} block to match all other requests. Inside this l
 
 
 
-/etc/nginx/sites-available/myproject
+   ## /etc/nginx/sites-available/myproject
 
-{
-server {
-    listen 80;
-    server_name server_domain_or_IP;
+
+    server {
+        listen 80;
+        server_name server_domain_or_IP;
 
     location = /favicon.ico { access_log off; log_not_found off; }
     location /static/ {
