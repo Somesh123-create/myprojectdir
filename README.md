@@ -699,49 +699,50 @@ Django streamlines the process of creating projects and applications by providin
 
 Supervisor is only available for python2, there are development forks/versions for python 3 but python 2 can and should be used in production because supervisor is an independent process.
 
-echo_supervisord_conf > supervisord.conf
-vi supervisord.conf
+    echo_supervisord_conf > supervisord.conf
+    vi supervisord.conf
 
 Run celery and redis as daemon processes with:
 
-supervisord
+    supervisord
 
 
 If adjustments are made to configuration, the processes can be restarted with:
 
-supervisorctl restart celeryd
-
-
-[program:celery_worker]
-numprocs=1
-command=/home/vboxuser/myprojectdir/myprojectenv/bin/celery -A myproject.celery worker --pool=solo -l info
-stdout_logfile=/home/vboxuser/myprojectdir/celery_worker.log
-stderr_logfile=/home/vboxuser/myprojectdir/celery_worker.log
-autostart=true
-autorestart=true
-startsecs=10
-stopwaitsecs=600
-stopsignal=QUIT
-stopasgroup=true
-killasgroup=true
-priority=1000
+    supervisorctl restart celeryd
 
 
 
+    [program:celery_worker]
+    numprocs=1
+    command=/home/vboxuser/myprojectdir/myprojectenv/bin/celery -A myproject.celery worker --pool=solo -l info
+    stdout_logfile=/home/vboxuser/myprojectdir/celery_worker.log
+    stderr_logfile=/home/vboxuser/myprojectdir/celery_worker.log
+    autostart=true
+    autorestart=true
+    startsecs=10
+    stopwaitsecs=600
+    stopsignal=QUIT
+    stopasgroup=true
+    killasgroup=true
+    priority=1000
 
-[program:celery_beat]
-numprocs=1
-command=/home/vboxuser/myprojectdir/myprojectenv/bin/celery -A myproject beat -l INFO
-stdout_logfile=/home/vboxuser/myprojectdir/celery_beat.log
-stderr_logfile=/home/vboxuser/myprojectdir/celery_beat.log
-autostart=true
-autorestart=true
-startsecs=10
-stopwaitsecs=600
-stopsignal=QUIT
-stopasgroup=true
-killasgroup=true
-priority=1001
+
+
+
+    [program:celery_beat]
+    numprocs=1
+    command=/home/vboxuser/myprojectdir/myprojectenv/bin/celery -A myproject beat -l INFO
+    stdout_logfile=/home/vboxuser/myprojectdir/celery_beat.log
+    stderr_logfile=/home/vboxuser/myprojectdir/celery_beat.log
+    autostart=true
+    autorestart=true
+    startsecs=10
+    stopwaitsecs=600
+    stopsignal=QUIT
+    stopasgroup=true
+    killasgroup=true
+    priority=1001
 
 
 
@@ -752,7 +753,7 @@ All set!
 
 
 
-supervisorctl reread
-supervisorctl update
-supervisorctl status
+    supervisorctl reread
+    supervisorctl update
+    supervisorctl status
 
