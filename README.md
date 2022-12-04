@@ -154,10 +154,10 @@ Note: Be sure to include localhost as one of the options since you will be proxy
 
 
 . . .
-# The simplest case: just add the domain name(s) and IP addresses of your Django server
-# ALLOWED_HOSTS = [ 'example.com', '203.0.113.5']
-# To respond to 'example.com' and any subdomains, start the domain with a dot
-# ALLOWED_HOSTS = ['.example.com', '203.0.113.5']
+The simplest case: just add the domain name(s) and IP addresses of your Django server
+ALLOWED_HOSTS = [ 'example.com', '203.0.113.5']
+To respond to 'example.com' and any subdomains, start the domain with a dot
+ALLOWED_HOSTS = ['.example.com', '203.0.113.5']
 ALLOWED_HOSTS = ['your_server_domain_or_IP', 'second_domain_or_IP', . . ., 'localhost']
 
 
