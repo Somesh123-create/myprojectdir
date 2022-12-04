@@ -40,7 +40,7 @@ To begin the process, you’ll download and install all of the items you need fr
 First, you’ll need to update the local apt package index and then download and install the packages. The packages you install depend on which version of Python your project will use.
 
 
-    ##Use the following command to install the necessary system packages:
+##Use the following command to install the necessary system packages:
 
     sudo apt update
     sudo apt install python3-venv libpq-dev postgresql postgresql-contrib nginx curl
@@ -56,7 +56,7 @@ By default, Postgres uses an authentication scheme called “peer authentication
 
 During the Postgres installation, an operating system user named postgres was created to correspond to the postgres PostgreSQL administrative user. You’ll need to use this user to perform administrative tasks. You can use sudo and pass in the username with the -u option.
 
-    ##Log into an interactive Postgres session by typing:
+##Log into an interactive Postgres session by typing:
 
     sudo -u postgres psql
 
