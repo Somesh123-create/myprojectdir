@@ -528,15 +528,15 @@ Finally, create a location / {} block to match all other requests. Inside this l
         listen 80;
         server_name server_domain_or_IP;
 
-    location = /favicon.ico { access_log off; log_not_found off; }
-    location /static/ {
-        root /home/sammy/myprojectdir;
-    }
+        location = /favicon.ico { access_log off; log_not_found off; }
+        location /static/ {
+            root /home/sammy/myprojectdir;
+        }
 
-    location / {
-        include proxy_params;
-        proxy_pass http://unix:/run/gunicorn.sock;
-    }
+        location / {
+            include proxy_params;
+            proxy_pass http://unix:/run/gunicorn.sock;
+        }
 
 
 
