@@ -709,7 +709,7 @@ Run celery and redis as daemon processes with:
 
 If adjustments are made to configuration, the processes can be restarted with:
 
-    supervisorctl restart celeryd
+- supervisorctl restart celeryd
 
 
 
