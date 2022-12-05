@@ -687,7 +687,8 @@ If you change Gunicorn socket or service files, reload the daemon and restart th
     
 If you change the Nginx server block configuration, test the configuration and then Nginx by typing:
 
-    sudo nginx -t && sudo systemctl restart nginx
+    sudo nginx -t
+    sudo systemctl restart nginx
     
 These commands are helpful for picking up changes as you adjust your configuration.
 
