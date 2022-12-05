@@ -14,7 +14,8 @@
 
 3) celery -A myproject beat -l INFO
 
-
+## Usefull Linke:
+    https://dev.to/idrisrampurawala/deploying-django-with-celery-and-redis-on-ubuntu-3fo6
 
 ## How To Set Up an ASGI Django App with Postgres, Nginx, and Uvicorn on Ubuntu 20.04
 
