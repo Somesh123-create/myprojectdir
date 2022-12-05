@@ -700,6 +700,12 @@ Django streamlines the process of creating projects and applications by providin
 
 # Daemonize celery and redis with supervisor
 
+# supervisor Usefull URL:
+    https://www.digitalocean.com/community/tutorials/how-to-install-and-manage-supervisor-on-ubuntu-and-debian-vps
+    
+# Redis Usefull URL:
+    https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-20-04
+
 Supervisor is only available for python2, there are development forks/versions for python 3 but python 2 can and should be used in production because supervisor is an independent process.
 
     echo_supervisord_conf > supervisord.conf
