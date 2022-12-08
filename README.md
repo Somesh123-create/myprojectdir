@@ -794,5 +794,5 @@ For your changes to work, restart nginx
 
 # Websocket Connecttion
 
-![site-available_config](https://user-images.githubusercontent.com/64925024/206423202-1d5c7495-eb46-4f67-ac04-9f314211ccb9.png)
+![Inkedsite-available_config](https://user-images.githubusercontent.com/64925024/206423931-86146957-e393-4685-9428-405a0f98bfcb.jpg)
 
