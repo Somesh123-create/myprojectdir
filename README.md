@@ -499,9 +499,9 @@ Start by creating and opening a new server block in Nginx’s sites-available di
 
 Inside, open up a new server block. You’ll start by specifying that this block should listen on the normal port 80 and that it should respond to the server’s domain name or IP address:
 
-
+    sudo nano /etc/nginx/sites-available/myproject
 # /etc/nginx/sites-available/myproject
-
+    
     server {
         listen 80;
         server_name server_domain_or_IP;
@@ -512,7 +512,7 @@ Inside, open up a new server block. You’ll start by specifying that this block
 Next, tell Nginx to ignore any problems with finding a favicon. You will also tell it where to find the static assets that you collected in the ~/myprojectdir/static directory. All of these files have a standard URI prefix of “/static”, so you can create a location block to match those requests:
 
 
-
+    sudo nano /etc/nginx/sites-available/myproject
 # /etc/nginx/sites-available/myproject
 
     server {
@@ -528,7 +528,7 @@ Next, tell Nginx to ignore any problems with finding a favicon. You will also te
 
 Finally, create a location / {} block to match all other requests. Inside this location, you’ll include the standard proxy_params file included with the Nginx installation and then you’ll pass the traffic directly to the Gunicorn socket:
 
-
+    sudo nano /etc/nginx/sites-available/myproject
 
    ## /etc/nginx/sites-available/myproject
 
