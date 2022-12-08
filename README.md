@@ -790,3 +790,6 @@ and make sure that username group can enter all directories along the path
 For your changes to work, restart nginx
 
     nginx -s reload
+
+
+# Websocket Connecttion
