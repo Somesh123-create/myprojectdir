@@ -629,6 +629,10 @@ This can happen if there are limited permissions at any point between the root d
     srw-rw-rw- root root gunicorn.sock
 
 
+django.db.utils.OperationalError: (1071, 'Specified key was too long; max key length is 3072 bytes')
+
+    ALTER DATABASE `databasename` CHARACTER SET utf8; 
+
 
 The output displays the permissions of each of the directory components. By looking at the permissions (first column), owner (second column), and group owner (third column), you can figure out what type of access is allowed to the socket file.
 
